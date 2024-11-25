@@ -1,0 +1,104 @@
+ /* Banner */
+ .banner {
+    background: url('images/DALL·E\ 2024-11-24\ 00.04.27\ -\ A\ serene\ wellness\ and\ spa-themed\ background\ for\ a\ website\ banner.\ The\ image\ features\ a\ harmonious\ setting\ with\ glowing\ candles\,\ smooth\ river\ stones\,\ g.webp') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Superposición para resaltar el texto */
+    z-index: 1;
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+  }
+
+  .banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .banner-content a {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .banner-content a:hover {
+    background-color: #218838;
+  }
+
+  /* Beneficios */
+  .beneficios {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .beneficios h2 {
+    font-weight: bold;
+    color: #28a745;
+  }
+
+  .beneficio-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .beneficio-card h5 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .beneficio-card p {
+    color: #555;
+  }
+
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .beneficio-card img {
+      margin-bottom: 15px;
+    }
+  }
+  /* Animación para filas de la tabla */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fila-animada {
+  animation: fadeIn 0.5s ease-in-out;
+}
